@@ -21,7 +21,7 @@ function App() {
     .finally(()=>{
       setLoading(false);  
     })
-  },[]);
+  },[dispatch]);
 
  
   return loading ?  (<div className="   h-screen  flex item-center justify-center bg-gray-400">
