@@ -47,7 +47,7 @@ import { Client, ID, Databases, Storage, Query } from "appwrite";
   
  }
 
- async grtPosts( quries= [Query.equal("status", "active")]){
+ async getPosts( quries= [Query.equal("status", "active")]){
   try {
    return await this.database.listDocuments(
     config.appwriteDatabaseId,
